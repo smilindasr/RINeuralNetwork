@@ -74,7 +74,7 @@ def format_move_probs(board_state, policy, threshold=0.01):
 
     return result
 
-def predict_move(model, board_state, current_player, temperature=1.0, add_noise=False,
+def predict_move(model, board_state, current_player, temperature=1.0, add_noise=True,
                 noise_alpha=0.3, noise_epsilon=0.25):
     """
     Predict the next move using the policy network.
